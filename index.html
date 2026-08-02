@@ -315,6 +315,33 @@ h2.head{
   align-items:center;
 }
 @media (max-width:860px){ .objective .grid{grid-template-columns:1fr;} }
+.founders-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+  margin-top:44px;
+}
+.founder-card{
+  text-align:center;
+  padding:28px 18px;
+  border-top:1px solid var(--hairline-dark);
+}
+.founder-card .name{
+  font-family:var(--display);
+  font-size:22px;
+  font-weight:600;
+  color:var(--ink);
+  letter-spacing:.2px;
+}
+.founder-card .role{
+  margin-top:6px;
+  font-family:'JetBrains Mono', monospace;
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--brass);
+}
+@media (max-width:860px){ .founders-grid{grid-template-columns:1fr; gap:0;} }
 .objective .q{
   font-family:var(--display);
   font-size:clamp(26px,3.4vw,36px);
@@ -615,6 +642,26 @@ footer .fname{ font-family:var(--display); font-size:17px; letter-spacing:.02em;
     </div>
 
     <p class="gap-note reveal">Legislation is only the first step. Quotas often go unmet, "reasonable accommodation" is inconsistently defined, and enforcement varies sharply by province. This is exactly the gap Project HAQ exists to explore &mdash; not just whether the laws exist, but whether they're actually being lived.</p>
+  </div>
+</section>
+
+<section class="objective section-tight" id="founders">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">&sect; Founded By</div>
+    <div class="founders-grid">
+      <div class="founder-card reveal">
+        <div class="name">Suleman Abdullah Agha</div>
+        <div class="role">Co-Founder</div>
+      </div>
+      <div class="founder-card reveal">
+        <div class="name">Muhammad Subhan Shiraz</div>
+        <div class="role">Founder</div>
+      </div>
+      <div class="founder-card reveal">
+        <div class="name">Ahnaa Reaz</div>
+        <div class="role">Co-Founder</div>
+      </div>
+    </div>
   </div>
 </section>
 
